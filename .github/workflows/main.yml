@@ -26,11 +26,11 @@ jobs:
 
       - name: Create Zip File
         run: |
-          cd dist/angular-15-crud-app-anvi
-          zip -r angular-15-crud-app.zip .
+          cd dist/dist/my-crud-app
+          zip -r my-crud-app.zip .
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: angular-15-crud-app-anvi
-          path: dist/angular-15-crud-app-anvi/angular-15-crud-app.zip
+          name: dist/my-crud-app
+          path: dist/my-crud-app/my-crud-app.zip
